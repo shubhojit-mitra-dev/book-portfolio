@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.old-font-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.old-font-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-font-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px #bfa44c79;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply inline-block bg-primary text-white cursor-pointer hover:bg-primary/80 py-2 px-4 my-3 rounded-lg;
+  }
+
+  .outline-btn {
+    @apply inline-block ring-2 ring-primary inset-0 text-primary cursor-pointer hover:bg-primary/80 hover:text-white py-2 px-4 my-3 rounded-lg;
+  }
+
+  .social-btn {
+    @apply text-5xl hover:text-primary duration-200 cursor-pointer;
+  }
+
+  .page-shadow {
+    @apply shadow-[inset_0_0_8px_rgba(0,0,0,0.6),12px_12px_14px_rgba(0,0,0,0.9)];
+  }
+}
+
+
